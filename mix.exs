@@ -7,6 +7,8 @@ defmodule ButlerCowsay.Mixfile do
      elixir: "~> 1.1",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
+     package: package,
+     description: description,
      deps: deps]
   end
 
@@ -30,5 +32,19 @@ defmodule ButlerCowsay.Mixfile do
     [
       {:cowsay, "~> 0.0.1"}
     ]
+  end
+
+  defp description do
+    """
+    ButlerCowsay plugin for Butler SlackBot
+    """
+  end
+
+  defp package do
+    [# These are the default files included in the package
+     files: ["lib", "mix.exs", "README*", "LICENSE*"],
+     maintainers: ["Bill Brock"],
+     licenses: ["MIT"],
+     links: %{"GitHub" => "https://github.com/bbrock25/butler_cowsay"}]
   end
 end

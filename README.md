@@ -1,6 +1,6 @@
 # ButlerCowsay
 
-**TODO: Add description**
+ButlerCowsay plugin for Butler SlackBot
 
 ## Installation
 
