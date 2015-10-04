@@ -1,4 +1,5 @@
 /_build
+/deps
 /cover
 /deps
 erl_crash.dump
