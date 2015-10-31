@@ -1,10 +1,10 @@
 defmodule ButlerCowsay do
   use Butler.Plugin
 
-  def respond("cowsay " <> say, state) do
-    resp_string = say |> Cowsay.say
+  respond ~r/cowsay (.*)/, conn, [_all, say] do
+    response = say |> Cowsay.say
 
-    {:reply, {:code, resp_string}, state}
+    reply conn, code("#{response}")
   end
 end
 
