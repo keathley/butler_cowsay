@@ -1,4 +1,4 @@
-defmodule ButlerCowsay.Mixfile do
+defmodule Butler.Cowsay.Mixfile do
   use Mix.Project
 
   def project do
@@ -30,7 +30,8 @@ defmodule ButlerCowsay.Mixfile do
   # Type "mix help deps" for more examples and options
   defp deps do
     [
-      {:cowsay, "~> 0.0.1"}
+      {:cowsay, "~> 0.0.1"},
+      {:butler, "~> 0.6.2"}
     ]
   end
 
@@ -41,8 +42,7 @@ defmodule ButlerCowsay.Mixfile do
   end
 
   defp package do
-    [# These are the default files included in the package
-     files: ["lib", "mix.exs", "README*", "LICENSE*"],
+    [
      maintainers: ["Bill Brock"],
      licenses: ["MIT"],
      links: %{"GitHub" => "https://github.com/bbrock25/butler_cowsay"}]
