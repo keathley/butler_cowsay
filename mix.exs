@@ -31,7 +31,7 @@ defmodule Butler.Cowsay.Mixfile do
   defp deps do
     [
       {:cowsay, "~> 0.0.1"},
-      {:butler, "~> 0.6.2"}
+      {:butler, "~> 0.7.0"}
     ]
   end
 
